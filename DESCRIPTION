@@ -1,0 +1,32 @@
+Package: CeleriteQFD
+Title: Simultaneous Detrending and Flare Detection from Photometrical Data using Celerite Gaussian Process with a Quiet-Firing-Decay Hidden Markov Model with Help of Stan
+Version: 0.1.0
+Authors@R: 
+    person(given = "Yunyi",
+           family = "Shen",
+           role = c("aut", "cre"),
+           email = "yshen99@wisc.edu",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Functions performing simultaneous detrending and flare detection from photometrical data using celerite Gaussian process with a Quiet-Firing-Decay hidden Markov model. Several choice of celerite kernels were given.  
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Biarch: true
+Depends: 
+    R (>= 3.4.0)
+Imports: 
+    methods,
+    Rcpp (>= 0.12.0),
+    RcppParallel (>= 5.0.1),
+    rstan (>= 2.18.1),
+    rstantools (>= 2.1.1)
+LinkingTo: 
+    BH (>= 1.66.0),
+    Rcpp (>= 0.12.0),
+    RcppEigen (>= 0.3.3.3.0),
+    RcppParallel (>= 5.0.1),
+    rstan (>= 2.18.1),
+    StanHeaders (>= 2.18.0)
+SystemRequirements: GNU make
