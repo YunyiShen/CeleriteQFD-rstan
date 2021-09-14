@@ -5,6 +5,7 @@
 #' @param kernel the celerite kernel to be used, currently can only be one of "Rot" for rotation, "SHO" for SHO kernel and "QP" for quasi-periodic kernel. Default "Rot".
 #' @param priors a list of priors, see details for details on different kernels
 #' @param ... extra argument to stan::sampling
+#' @details
 #' @return a list with stan's output in `$stan_out` and majority decoding of states at `$viterbi` and trend in `$trend`
 CeleriteQFD <- function(tt, flux, kernel = "Rot", priors=NULL, ...){
   if(!kernel %in% c("Rot","SHO","GP")){
@@ -112,6 +113,7 @@ CeleriteQFD <- function(tt, flux, kernel = "Rot", priors=NULL, ...){
 #' @param kernel the celerite kernel to be used, currently can only be one of "Rot" for rotation, "SHO" for SHO kernel and "QP" for quasi-periodic kernel. Default "Rot".
 #' @param priors a list of priors, see details for details on different kernels
 #' @param ... extra argument to stan::sampling
+#' @details
 #' @return a list with stan's output in `$stan_out` and trend in `$trend`
 Celerite <- function(tt, flux, kernel = "Rot", priors=NULL, ...){
   if(!kernel %in% c("Rot","SHO","GP")){
